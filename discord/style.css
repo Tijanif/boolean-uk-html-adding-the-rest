@@ -20,16 +20,20 @@
   background-color: #8d8d3d50;
 
   display: grid;
-  grid-template-columns: 0.15fr 0.9fr;
+  /* grid-template: 
+    "logo class icons" 50px /
+    50px 1fr auto; */
+  grid-template-columns: 50px 1fr auto;
+  grid-gap: 6rem;
 
   place-content: center;
 }
-.header-wrapper {
+/* .header-wrapper {
   display: grid;
   grid-template-columns: 4rem 20rem;
   width: 100%;
   justify-content: space-between;
-}
+} */
 .top-icons {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -57,8 +61,23 @@
 .side-channels {
   grid-area: side-channels;
   background-color: #c931c950;
+  /* display: grid;
+  grid-template-rows: 4rem 20rem 4rem; */
 }
 
+.channels {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr auto;
+}
+
+.channels > * {
+  border: 2px solid #000;
+}
+
+.channel-items {
+  border: 1px solid black;
+}
 .main {
   grid-area: main;
   background-color: #e795e750;
