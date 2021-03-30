@@ -81,4 +81,7 @@
 .main {
   grid-area: main;
   background-color: #e795e750;
+  display: grid;
+  grid-gap: 1px;
+  align-content: end;
 }
