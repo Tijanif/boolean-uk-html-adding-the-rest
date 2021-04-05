@@ -18,6 +18,11 @@
 .header {
   background-color: aqua;
   grid-area: header;
+
+  display: grid;
+}
+
+.header .header-child1 {
 }
 .left-side {
   background-color: lightcoral;
