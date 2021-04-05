@@ -20,10 +20,20 @@
   grid-area: header;
 
   display: grid;
+  grid-template:
+    "header-child1 header-child2" /
+    1fr 1fr;
 }
 
 .header .header-child1 {
+  grid-area: header-child1;
+  border: 1px solid black;
 }
+.header .header-child2 {
+  grid-area: header-child2;
+  border: 1px solid black;
+}
+
 .left-side {
   background-color: lightcoral;
   grid-area: left-side;
